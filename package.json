@@ -1,0 +1,24 @@
+{
+  "name": "precisedevtest",
+  "version": "0.1.0",
+  "description": "Test for frontend developers applying to work at Precise.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others --names http,json,sass \"http-server\" \"json-server mock-backend/users.json\" \"node-sass --watch source/styles -o public\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MulrooneyMedia/precise"
+  },
+  "author": "Precise dev team",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "http-server": "^0.12.3",
+    "jasmine": "^3.7.0",
+    "json-server": "^0.16.3",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
